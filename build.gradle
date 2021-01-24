@@ -2,10 +2,11 @@
 
 buildscript {
     repositories {
-        maven { url 'http://uk.maven.org/maven2' }
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         jcenter()
         // maven
-        mavenCentral()
+		maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        //mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.0'
@@ -21,7 +22,8 @@ allprojects {
     repositories {
         jcenter()
         // maven
-        mavenCentral()
+		maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        //mavenCentral()
         flatDir {
             dirs 'libs'
         }
